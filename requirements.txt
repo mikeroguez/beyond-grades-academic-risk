@@ -1,0 +1,15 @@
+# Versions verified to run this pipeline (macOS, Apple Silicon, two local
+# environments in the authors' working setup: one for TensorFlow/SHAP-heavy
+# stages, one for everything else). Minimum versions given below; exact
+# versions used are noted in comments for reference.
+numpy>=1.26          # 1.26.4
+pandas>=2.3          # 2.3.1 (statistical/preprocessing stages) / 3.0.3 (TF env)
+scipy>=1.16          # 1.16.0 / 1.17.1
+scikit-learn>=1.7    # 1.7.1 / 1.9.0
+statsmodels>=0.14    # 0.14.6
+matplotlib>=3.11     # 3.11.0 / 3.11.1
+seaborn>=0.13        # 0.13.2
+joblib>=1.5          # 1.5.1 / 1.5.3
+tensorflow>=2.16,<2.17  # 2.16.2
+keras-tuner>=1.4     # 1.4.8
+shap>=0.51           # 0.51.0
