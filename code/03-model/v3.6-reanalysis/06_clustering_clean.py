@@ -281,7 +281,8 @@ try:
         var_exp = r["pca_variance_explained"]
         plt.xlabel(f"PC1 ({var_exp[0] * 100:.1f}% var.)")
         plt.ylabel(f"PC2 ({var_exp[1] * 100:.1f}% var.)")
-        plt.title(f"Ward (k=7) en PCA 2D -- {label}")
+        suffix = "leakage-free" if label == "CLEAN" else "diagnostic"
+        plt.title(f"Ward (k = 7) PCA projection ({suffix})")
         plt.legend()
         plt.grid(True)
         plt.tight_layout()

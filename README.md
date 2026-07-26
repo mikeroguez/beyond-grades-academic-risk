@@ -119,7 +119,7 @@ synthetic substitute dataset provided in this repository.
 
 Supplementary materials (variable dictionary, literature benchmark table, extended
 clustering/SHAP analyses) are archived on Zenodo:
-<https://doi.org/10.5281/zenodo.20060485>.
+<https://doi.org/10.5281/zenodo.21589028>.
 
 ## What is intentionally not in this repository
 

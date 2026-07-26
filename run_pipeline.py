@@ -181,7 +181,7 @@ def make_stages(v38_out: Path, reanalysis_out: Path, smoke_test: bool) -> list[S
         ),
         Stage(
             "main_clustering",
-            "100%: clustering sobre top-11 SHAP (Fig. 8, Tabla 11)",
+            "100%: clustering over top-11 SHAP features (Fig. 7, Table 10)",
             V36_REANALYSIS_DIR / "06_clustering_clean.py",
             V36_REANALYSIS_DIR,
             (
@@ -551,7 +551,7 @@ def package_known_materials(run_dir: Path, reanalysis_out: Path) -> dict:
         (CODE_DIR / "v3.6" / "data" / "synthetic_example" / "synthetic_dataset_final_3_x.csv", materials_dir / "synthetic_dataset_final_3_x.csv"),
         (CODE_DIR / "v3.6" / "data" / "synthetic_example" / "README.md", materials_dir / "synthetic_example_README.md"),
         (V36_REANALYSIS_OUT / "08_final_learning_curve.png", figures_dir / "Figure05_candidate_08_final_learning_curve.png"),
-        (V36_REANALYSIS_OUT / "06_pca_scatter_CLEAN.png", figures_dir / "Figure08_candidate_06_pca_scatter_CLEAN.png"),
+        (V36_REANALYSIS_OUT / "06_pca_scatter_CLEAN.png", figures_dir / "Figure07_candidate_06_pca_scatter_CLEAN.png"),
         (V36_REANALYSIS_OUT / "09_shap_summary_missing_assignments.png", figures_dir / "Figure06_candidate_09_shap_summary_missing_assignments.png"),
     ]
 
